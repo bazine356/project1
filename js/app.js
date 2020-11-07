@@ -3,8 +3,6 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-imdbURL = "http://www.omdbapi.com/?t=star+wars&apikey=7aeb760a"
-
 fetch("https://love-calculator.p.rapidapi.com/getPercentage?fname=John&sname=Alice", {
   "method": "GET",
   "headers": {

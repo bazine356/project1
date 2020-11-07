@@ -32,3 +32,4 @@ fetch("http://www.omdbapi.com/?t=star+trek&apikey=716bc5f5")
   .catch(err => {
     console.error(err);
   })
+

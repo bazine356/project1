@@ -1,3 +1,5 @@
+console.log("Sanity Check, JS is connected!")
+
 var requestOptions = {
   method: 'GET',
   redirect: 'follow'

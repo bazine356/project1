@@ -1,10 +1,34 @@
 var requestOptions = {
-    method: 'GET',
-    redirect: 'follow'
-  };
-   
-  fetch('https://imdb-api.com/en/API/SearchSeries/k_82t1jm1h/saturday%20night%20live', requestOptions)
-    .then(response => response.json())
-    .then(result => console.log(result))
-    .catch(error => console.log('error', error));
-  
+  method: 'GET',
+  redirect: 'follow'
+};
+
+imdbURL = "http://www.omdbapi.com/?t=star+wars&apikey=7aeb760a"
+
+fetch("https://love-calculator.p.rapidapi.com/getPercentage?fname=John&sname=Alice", {
+  "method": "GET",
+  "headers": {
+    "x-rapidapi-key": "72c1a1d3c8msh9e36717d571537fp101167jsn0ba82bbeba67",
+    "x-rapidapi-host": "love-calculator.p.rapidapi.com"
+  }
+})
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (data) {
+    console.log(data)
+  })
+  .catch(err => {
+    console.error(err);
+  })
+
+fetch("http://www.omdbapi.com/?t=star+trek&apikey=716bc5f5")
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (data) {
+    console.log(data)
+  })
+  .catch(err => {
+    console.error(err);
+  })
